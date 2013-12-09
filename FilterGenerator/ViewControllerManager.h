@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewControllerManager.h
 //  FilterGenerator
 //
 //  Created by masaaki goshima on 2013/12/09.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface ViewControllerManager : UINavigationController
 
 @end

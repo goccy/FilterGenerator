@@ -1,0 +1,10 @@
+PODS:
+  - GPUImage (0.1.0)
+
+DEPENDENCIES:
+  - GPUImage (= 0.1.0)
+
+SPEC CHECKSUMS:
+  GPUImage: 5b902c1df2afe0ac30a8e3e7379f9c0bb25c7c85
+
+COCOAPODS: 0.24.0

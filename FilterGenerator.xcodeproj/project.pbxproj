@@ -13,15 +13,19 @@
 		3E3A0C5618556ECE00CB5252 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C5418556ECE00CB5252 /* InfoPlist.strings */; };
 		3E3A0C5818556ECE00CB5252 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C5718556ECE00CB5252 /* main.m */; };
 		3E3A0C5C18556ECE00CB5252 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C5B18556ECE00CB5252 /* AppDelegate.m */; };
-		3E3A0C5F18556ECE00CB5252 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C5D18556ECE00CB5252 /* Main_iPhone.storyboard */; };
-		3E3A0C6218556ECE00CB5252 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C6018556ECE00CB5252 /* Main_iPad.storyboard */; };
-		3E3A0C6518556ECE00CB5252 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C6418556ECE00CB5252 /* ViewController.m */; };
-		3E3A0C6718556ECE00CB5252 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C6618556ECE00CB5252 /* Images.xcassets */; };
 		3E3A0C6E18556ECE00CB5252 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A0C6D18556ECE00CB5252 /* XCTest.framework */; };
 		3E3A0C6F18556ECE00CB5252 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A0C4B18556ECE00CB5252 /* Foundation.framework */; };
 		3E3A0C7018556ECE00CB5252 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A0C4F18556ECE00CB5252 /* UIKit.framework */; };
 		3E3A0C7818556ECE00CB5252 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C7618556ECE00CB5252 /* InfoPlist.strings */; };
 		3E3A0C7A18556ECE00CB5252 /* FilterGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C7918556ECE00CB5252 /* FilterGeneratorTests.m */; };
+		3E3A0C8818557BB700CB5252 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C8618557BB700CB5252 /* InitialViewController.m */; };
+		3E3A0C8918557BB700CB5252 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C8718557BB700CB5252 /* InitialViewController.xib */; };
+		3E3A0C8F1855A39B00CB5252 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C8D1855A39B00CB5252 /* EditViewController.m */; };
+		3E3A0C901855A39B00CB5252 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C8E1855A39B00CB5252 /* EditViewController.xib */; };
+		3E3A0C941855A4CA00CB5252 /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C921855A4CA00CB5252 /* ViewControllerManager.m */; };
+		3E3A0C951855A4CA00CB5252 /* ViewControllerManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C931855A4CA00CB5252 /* ViewControllerManager.xib */; };
+		3E3A0C9C1855A77D00CB5252 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C9B1855A77D00CB5252 /* BaseViewController.m */; };
+		965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38320824C80B455AB57C12AA /* Pods-FilterGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilterGenerator.xcconfig"; path = "Pods/Pods-FilterGenerator.xcconfig"; sourceTree = "<group>"; };
 		3E3A0C4818556ECE00CB5252 /* FilterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3A0C4B18556ECE00CB5252 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E3A0C4D18556ECE00CB5252 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,16 +50,23 @@
 		3E3A0C5918556ECE00CB5252 /* FilterGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FilterGenerator-Prefix.pch"; sourceTree = "<group>"; };
 		3E3A0C5A18556ECE00CB5252 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E3A0C5B18556ECE00CB5252 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E3A0C5E18556ECE00CB5252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		3E3A0C6118556ECE00CB5252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		3E3A0C6318556ECE00CB5252 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E3A0C6418556ECE00CB5252 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3E3A0C6618556ECE00CB5252 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E3A0C6C18556ECE00CB5252 /* FilterGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilterGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3A0C6D18556ECE00CB5252 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E3A0C7518556ECE00CB5252 /* FilterGeneratorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilterGeneratorTests-Info.plist"; sourceTree = "<group>"; };
 		3E3A0C7718556ECE00CB5252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E3A0C7918556ECE00CB5252 /* FilterGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterGeneratorTests.m; sourceTree = "<group>"; };
+		3E3A0C8518557BB700CB5252 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		3E3A0C8618557BB700CB5252 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		3E3A0C8718557BB700CB5252 /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		3E3A0C8C1855A39B00CB5252 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		3E3A0C8D1855A39B00CB5252 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		3E3A0C8E1855A39B00CB5252 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		3E3A0C911855A4CA00CB5252 /* ViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerManager.h; sourceTree = "<group>"; };
+		3E3A0C921855A4CA00CB5252 /* ViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerManager.m; sourceTree = "<group>"; };
+		3E3A0C931855A4CA00CB5252 /* ViewControllerManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerManager.xib; sourceTree = "<group>"; };
+		3E3A0C9A1855A77D00CB5252 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3E3A0C9B1855A77D00CB5252 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 				3E3A0C4E18556ECE00CB5252 /* CoreGraphics.framework in Frameworks */,
 				3E3A0C5018556ECE00CB5252 /* UIKit.framework in Frameworks */,
 				3E3A0C4C18556ECE00CB5252 /* Foundation.framework in Frameworks */,
+				965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +101,7 @@
 				3E3A0C7318556ECE00CB5252 /* FilterGeneratorTests */,
 				3E3A0C4A18556ECE00CB5252 /* Frameworks */,
 				3E3A0C4918556ECE00CB5252 /* Products */,
+				38320824C80B455AB57C12AA /* Pods-FilterGenerator.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +121,7 @@
 				3E3A0C4D18556ECE00CB5252 /* CoreGraphics.framework */,
 				3E3A0C4F18556ECE00CB5252 /* UIKit.framework */,
 				3E3A0C6D18556ECE00CB5252 /* XCTest.framework */,
+				D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,13 +129,9 @@
 		3E3A0C5118556ECE00CB5252 /* FilterGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0C8418557A8C00CB5252 /* View */,
 				3E3A0C5A18556ECE00CB5252 /* AppDelegate.h */,
 				3E3A0C5B18556ECE00CB5252 /* AppDelegate.m */,
-				3E3A0C5D18556ECE00CB5252 /* Main_iPhone.storyboard */,
-				3E3A0C6018556ECE00CB5252 /* Main_iPad.storyboard */,
-				3E3A0C6318556ECE00CB5252 /* ViewController.h */,
-				3E3A0C6418556ECE00CB5252 /* ViewController.m */,
-				3E3A0C6618556ECE00CB5252 /* Images.xcassets */,
 				3E3A0C5218556ECE00CB5252 /* Supporting Files */,
 			);
 			path = FilterGenerator;
@@ -155,6 +166,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3E3A0C8318557A7A00CB5252 /* InitialViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0C8518557BB700CB5252 /* InitialViewController.h */,
+				3E3A0C8618557BB700CB5252 /* InitialViewController.m */,
+				3E3A0C8718557BB700CB5252 /* InitialViewController.xib */,
+			);
+			name = InitialViewController;
+			sourceTree = "<group>";
+		};
+		3E3A0C8418557A8C00CB5252 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0C8A1855A35800CB5252 /* ViewController */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3E3A0C8A1855A35800CB5252 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0C8B1855A36600CB5252 /* EditViewController */,
+				3E3A0C8318557A7A00CB5252 /* InitialViewController */,
+				3E3A0C911855A4CA00CB5252 /* ViewControllerManager.h */,
+				3E3A0C921855A4CA00CB5252 /* ViewControllerManager.m */,
+				3E3A0C931855A4CA00CB5252 /* ViewControllerManager.xib */,
+				3E3A0C9A1855A77D00CB5252 /* BaseViewController.h */,
+				3E3A0C9B1855A77D00CB5252 /* BaseViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3E3A0C8B1855A36600CB5252 /* EditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0C8C1855A39B00CB5252 /* EditViewController.h */,
+				3E3A0C8D1855A39B00CB5252 /* EditViewController.m */,
+				3E3A0C8E1855A39B00CB5252 /* EditViewController.xib */,
+			);
+			name = EditViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E3A0C7D18556ECE00CB5252 /* Build configuration list for PBXNativeTarget "FilterGenerator" */;
 			buildPhases = (
+				77A695BA2A7C475A91965A9E /* Check Pods Manifest.lock */,
 				3E3A0C4418556ECE00CB5252 /* Sources */,
 				3E3A0C4518556ECE00CB5252 /* Frameworks */,
 				3E3A0C4618556ECE00CB5252 /* Resources */,
+				FA6DD5D72C8B4F62A5F2C762 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,10 +286,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E3A0C6218556ECE00CB5252 /* Main_iPad.storyboard in Resources */,
-				3E3A0C6718556ECE00CB5252 /* Images.xcassets in Resources */,
-				3E3A0C5F18556ECE00CB5252 /* Main_iPhone.storyboard in Resources */,
+				3E3A0C951855A4CA00CB5252 /* ViewControllerManager.xib in Resources */,
+				3E3A0C901855A39B00CB5252 /* EditViewController.xib in Resources */,
 				3E3A0C5618556ECE00CB5252 /* InfoPlist.strings in Resources */,
+				3E3A0C8918557BB700CB5252 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +303,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77A695BA2A7C475A91965A9E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6DD5D72C8B4F62A5F2C762 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-FilterGenerator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E3A0C4418556ECE00CB5252 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E3A0C6518556ECE00CB5252 /* ViewController.m in Sources */,
+				3E3A0C8F1855A39B00CB5252 /* EditViewController.m in Sources */,
+				3E3A0C9C1855A77D00CB5252 /* BaseViewController.m in Sources */,
 				3E3A0C5C18556ECE00CB5252 /* AppDelegate.m in Sources */,
 				3E3A0C5818556ECE00CB5252 /* main.m in Sources */,
+				3E3A0C8818557BB700CB5252 /* InitialViewController.m in Sources */,
+				3E3A0C941855A4CA00CB5252 /* ViewControllerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,22 +375,6 @@
 				3E3A0C5518556ECE00CB5252 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3E3A0C5D18556ECE00CB5252 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E3A0C5E18556ECE00CB5252 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		3E3A0C6018556ECE00CB5252 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E3A0C6118556ECE00CB5252 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		3E3A0C7618556ECE00CB5252 /* InfoPlist.strings */ = {
@@ -389,26 +464,32 @@
 		};
 		3E3A0C7E18556ECE00CB5252 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38320824C80B455AB57C12AA /* Pods-FilterGenerator.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterGenerator/FilterGenerator-Prefix.pch";
 				INFOPLIST_FILE = "FilterGenerator/FilterGenerator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		3E3A0C7F18556ECE00CB5252 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38320824C80B455AB57C12AA /* Pods-FilterGenerator.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterGenerator/FilterGenerator-Prefix.pch";
 				INFOPLIST_FILE = "FilterGenerator/FilterGenerator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +555,7 @@
 				3E3A0C7F18556ECE00CB5252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E3A0C8018556ECE00CB5252 /* Build configuration list for PBXNativeTarget "FilterGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +564,7 @@
 				3E3A0C8218556ECE00CB5252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
