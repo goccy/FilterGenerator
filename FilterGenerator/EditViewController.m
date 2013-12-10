@@ -31,4 +31,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)touchFilterSelectButton:(id)sender
+{
+    FilterSelectViewController *selectVC = [[FilterSelectViewController alloc] initWithNibName:@"FilterSelectViewController" bundle:nil];
+    ViewControllerManager *manager = [self manager];
+    [manager pushViewController:selectVC animated:YES];
+}
+
+- (IBAction)touchImageSelectButton:(id)sender
+{
+}
 @end

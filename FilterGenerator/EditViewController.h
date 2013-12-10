@@ -11,8 +11,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "FilterSelectViewController.h"
 
 @interface EditViewController : BaseViewController
+
+- (IBAction)touchFilterSelectButton:(id)sender;
+- (IBAction)touchImageSelectButton:(id)sender;
 
 @end
 

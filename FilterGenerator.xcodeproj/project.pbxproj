@@ -25,6 +25,9 @@
 		3E3A0C941855A4CA00CB5252 /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C921855A4CA00CB5252 /* ViewControllerManager.m */; };
 		3E3A0C951855A4CA00CB5252 /* ViewControllerManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0C931855A4CA00CB5252 /* ViewControllerManager.xib */; };
 		3E3A0C9C1855A77D00CB5252 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C9B1855A77D00CB5252 /* BaseViewController.m */; };
+		3E3A0CA11856C77500CB5252 /* FilterSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C9F1856C77500CB5252 /* FilterSelectViewController.m */; };
+		3E3A0CA21856C77500CB5252 /* FilterSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CA01856C77500CB5252 /* FilterSelectViewController.xib */; };
+		3E3A0CA618571BB100CB5252 /* FilterTypeDelclare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CA518571BB100CB5252 /* FilterTypeDelclare.m */; };
 		965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,11 @@
 		3E3A0C931855A4CA00CB5252 /* ViewControllerManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerManager.xib; sourceTree = "<group>"; };
 		3E3A0C9A1855A77D00CB5252 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3E3A0C9B1855A77D00CB5252 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3E3A0C9E1856C77500CB5252 /* FilterSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterSelectViewController.h; sourceTree = "<group>"; };
+		3E3A0C9F1856C77500CB5252 /* FilterSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterSelectViewController.m; sourceTree = "<group>"; };
+		3E3A0CA01856C77500CB5252 /* FilterSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterSelectViewController.xib; sourceTree = "<group>"; };
+		3E3A0CA418571BB100CB5252 /* FilterTypeDelclare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTypeDelclare.h; sourceTree = "<group>"; };
+		3E3A0CA518571BB100CB5252 /* FilterTypeDelclare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTypeDelclare.m; sourceTree = "<group>"; };
 		D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +137,8 @@
 		3E3A0C5118556ECE00CB5252 /* FilterGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0C8A1855A35800CB5252 /* ViewController */,
+				3E3A0CA318571B6700CB5252 /* Common */,
 				3E3A0C8418557A8C00CB5252 /* View */,
 				3E3A0C5A18556ECE00CB5252 /* AppDelegate.h */,
 				3E3A0C5B18556ECE00CB5252 /* AppDelegate.m */,
@@ -179,7 +189,6 @@
 		3E3A0C8418557A8C00CB5252 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3E3A0C8A1855A35800CB5252 /* ViewController */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 		3E3A0C8A1855A35800CB5252 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0C9D1856C72800CB5252 /* FilterSelectViewController */,
 				3E3A0C8B1855A36600CB5252 /* EditViewController */,
 				3E3A0C8318557A7A00CB5252 /* InitialViewController */,
 				3E3A0C911855A4CA00CB5252 /* ViewControllerManager.h */,
@@ -206,6 +216,25 @@
 				3E3A0C8E1855A39B00CB5252 /* EditViewController.xib */,
 			);
 			name = EditViewController;
+			sourceTree = "<group>";
+		};
+		3E3A0C9D1856C72800CB5252 /* FilterSelectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0C9E1856C77500CB5252 /* FilterSelectViewController.h */,
+				3E3A0C9F1856C77500CB5252 /* FilterSelectViewController.m */,
+				3E3A0CA01856C77500CB5252 /* FilterSelectViewController.xib */,
+			);
+			name = FilterSelectViewController;
+			sourceTree = "<group>";
+		};
+		3E3A0CA318571B6700CB5252 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0CA418571BB100CB5252 /* FilterTypeDelclare.h */,
+				3E3A0CA518571BB100CB5252 /* FilterTypeDelclare.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +319,7 @@
 				3E3A0C901855A39B00CB5252 /* EditViewController.xib in Resources */,
 				3E3A0C5618556ECE00CB5252 /* InfoPlist.strings in Resources */,
 				3E3A0C8918557BB700CB5252 /* InitialViewController.xib in Resources */,
+				3E3A0CA21856C77500CB5252 /* FilterSelectViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +373,8 @@
 			files = (
 				3E3A0C8F1855A39B00CB5252 /* EditViewController.m in Sources */,
 				3E3A0C9C1855A77D00CB5252 /* BaseViewController.m in Sources */,
+				3E3A0CA11856C77500CB5252 /* FilterSelectViewController.m in Sources */,
+				3E3A0CA618571BB100CB5252 /* FilterTypeDelclare.m in Sources */,
 				3E3A0C5C18556ECE00CB5252 /* AppDelegate.m in Sources */,
 				3E3A0C5818556ECE00CB5252 /* main.m in Sources */,
 				3E3A0C8818557BB700CB5252 /* InitialViewController.m in Sources */,
