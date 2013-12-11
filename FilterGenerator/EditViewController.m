@@ -7,6 +7,7 @@
 //
 
 #import "EditViewController.h"
+#import "ContrastFilterView.h"
 
 @implementation EditViewController
 
@@ -22,7 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //[self.view addSubview:[[ContrastFilterView alloc] initWithFrame:self.view.frame]];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    if (self.editImage) [self.editImageView setImage:self.editImage];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,5 +47,9 @@
 
 - (IBAction)touchImageSelectButton:(id)sender
 {
+    SelectPhotoViewController *photoVC = [[SelectPhotoViewController alloc] initWithNibName:@"SelectPhotoViewController" bundle:nil];
+    ViewControllerManager *manager = [self manager];
+    [manager pushViewController:photoVC animated:YES];
 }
+
 @end

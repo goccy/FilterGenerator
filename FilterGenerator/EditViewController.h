@@ -12,8 +12,12 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 #import "FilterSelectViewController.h"
+#import "SelectPhotoViewController.h"
 
 @interface EditViewController : BaseViewController
+
+@property (nonatomic, strong) UIImage *editImage;
+@property (nonatomic, weak) IBOutlet UIImageView *editImageView;
 
 - (IBAction)touchFilterSelectButton:(id)sender;
 - (IBAction)touchImageSelectButton:(id)sender;

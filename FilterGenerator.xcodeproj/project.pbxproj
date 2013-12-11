@@ -28,6 +28,12 @@
 		3E3A0CA11856C77500CB5252 /* FilterSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0C9F1856C77500CB5252 /* FilterSelectViewController.m */; };
 		3E3A0CA21856C77500CB5252 /* FilterSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CA01856C77500CB5252 /* FilterSelectViewController.xib */; };
 		3E3A0CA618571BB100CB5252 /* FilterTypeDelclare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CA518571BB100CB5252 /* FilterTypeDelclare.m */; };
+		3E3A0CAF1858114200CB5252 /* ContrastFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CAE1858114200CB5252 /* ContrastFilterView.m */; };
+		3E3A0CB418583AC100CB5252 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CB218583AC100CB5252 /* SelectPhotoViewController.m */; };
+		3E3A0CB518583AC100CB5252 /* SelectPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CB318583AC100CB5252 /* SelectPhotoViewController.xib */; };
+		3E3A0CB918583FBF00CB5252 /* SelectPhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CB818583FBF00CB5252 /* SelectPhotoViewCell.m */; };
+		3E3A0CBB18583FEA00CB5252 /* SelectPhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CBA18583FEA00CB5252 /* SelectPhotoViewCell.xib */; };
+		3E3A0CC11858624600CB5252 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A0CC01858624600CB5252 /* AssetsLibrary.framework */; };
 		965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +80,15 @@
 		3E3A0CA01856C77500CB5252 /* FilterSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterSelectViewController.xib; sourceTree = "<group>"; };
 		3E3A0CA418571BB100CB5252 /* FilterTypeDelclare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTypeDelclare.h; sourceTree = "<group>"; };
 		3E3A0CA518571BB100CB5252 /* FilterTypeDelclare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTypeDelclare.m; sourceTree = "<group>"; };
+		3E3A0CAD1858114200CB5252 /* ContrastFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContrastFilterView.h; sourceTree = "<group>"; };
+		3E3A0CAE1858114200CB5252 /* ContrastFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContrastFilterView.m; sourceTree = "<group>"; };
+		3E3A0CB118583AC100CB5252 /* SelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewController.h; sourceTree = "<group>"; };
+		3E3A0CB218583AC100CB5252 /* SelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewController.m; sourceTree = "<group>"; };
+		3E3A0CB318583AC100CB5252 /* SelectPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPhotoViewController.xib; sourceTree = "<group>"; };
+		3E3A0CB718583FBF00CB5252 /* SelectPhotoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewCell.h; sourceTree = "<group>"; };
+		3E3A0CB818583FBF00CB5252 /* SelectPhotoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewCell.m; sourceTree = "<group>"; };
+		3E3A0CBA18583FEA00CB5252 /* SelectPhotoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPhotoViewCell.xib; sourceTree = "<group>"; };
+		3E3A0CC01858624600CB5252 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3A0CC11858624600CB5252 /* AssetsLibrary.framework in Frameworks */,
 				3E3A0C4E18556ECE00CB5252 /* CoreGraphics.framework in Frameworks */,
 				3E3A0C5018556ECE00CB5252 /* UIKit.framework in Frameworks */,
 				3E3A0C4C18556ECE00CB5252 /* Foundation.framework in Frameworks */,
@@ -125,6 +141,7 @@
 		3E3A0C4A18556ECE00CB5252 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0CC01858624600CB5252 /* AssetsLibrary.framework */,
 				3E3A0C4B18556ECE00CB5252 /* Foundation.framework */,
 				3E3A0C4D18556ECE00CB5252 /* CoreGraphics.framework */,
 				3E3A0C4F18556ECE00CB5252 /* UIKit.framework */,
@@ -137,6 +154,7 @@
 		3E3A0C5118556ECE00CB5252 /* FilterGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0CBC185843C900CB5252 /* Resources */,
 				3E3A0C8A1855A35800CB5252 /* ViewController */,
 				3E3A0CA318571B6700CB5252 /* Common */,
 				3E3A0C8418557A8C00CB5252 /* View */,
@@ -189,6 +207,8 @@
 		3E3A0C8418557A8C00CB5252 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0CAD1858114200CB5252 /* ContrastFilterView.h */,
+				3E3A0CAE1858114200CB5252 /* ContrastFilterView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -196,6 +216,7 @@
 		3E3A0C8A1855A35800CB5252 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0CB018583A9000CB5252 /* SelectPhotoViewController */,
 				3E3A0C9D1856C72800CB5252 /* FilterSelectViewController */,
 				3E3A0C8B1855A36600CB5252 /* EditViewController */,
 				3E3A0C8318557A7A00CB5252 /* InitialViewController */,
@@ -235,6 +256,34 @@
 				3E3A0CA518571BB100CB5252 /* FilterTypeDelclare.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		3E3A0CB018583A9000CB5252 /* SelectPhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0CB118583AC100CB5252 /* SelectPhotoViewController.h */,
+				3E3A0CB218583AC100CB5252 /* SelectPhotoViewController.m */,
+				3E3A0CB318583AC100CB5252 /* SelectPhotoViewController.xib */,
+				3E3A0CB718583FBF00CB5252 /* SelectPhotoViewCell.h */,
+				3E3A0CB818583FBF00CB5252 /* SelectPhotoViewCell.m */,
+				3E3A0CBA18583FEA00CB5252 /* SelectPhotoViewCell.xib */,
+			);
+			name = SelectPhotoViewController;
+			sourceTree = "<group>";
+		};
+		3E3A0CBC185843C900CB5252 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0CBD185843D100CB5252 /* images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3E3A0CBD185843D100CB5252 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +366,11 @@
 			files = (
 				3E3A0C951855A4CA00CB5252 /* ViewControllerManager.xib in Resources */,
 				3E3A0C901855A39B00CB5252 /* EditViewController.xib in Resources */,
+				3E3A0CBB18583FEA00CB5252 /* SelectPhotoViewCell.xib in Resources */,
 				3E3A0C5618556ECE00CB5252 /* InfoPlist.strings in Resources */,
 				3E3A0C8918557BB700CB5252 /* InitialViewController.xib in Resources */,
 				3E3A0CA21856C77500CB5252 /* FilterSelectViewController.xib in Resources */,
+				3E3A0CB518583AC100CB5252 /* SelectPhotoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,8 +424,11 @@
 			files = (
 				3E3A0C8F1855A39B00CB5252 /* EditViewController.m in Sources */,
 				3E3A0C9C1855A77D00CB5252 /* BaseViewController.m in Sources */,
+				3E3A0CAF1858114200CB5252 /* ContrastFilterView.m in Sources */,
 				3E3A0CA11856C77500CB5252 /* FilterSelectViewController.m in Sources */,
 				3E3A0CA618571BB100CB5252 /* FilterTypeDelclare.m in Sources */,
+				3E3A0CB418583AC100CB5252 /* SelectPhotoViewController.m in Sources */,
+				3E3A0CB918583FBF00CB5252 /* SelectPhotoViewCell.m in Sources */,
 				3E3A0C5C18556ECE00CB5252 /* AppDelegate.m in Sources */,
 				3E3A0C5818556ECE00CB5252 /* main.m in Sources */,
 				3E3A0C8818557BB700CB5252 /* InitialViewController.m in Sources */,
