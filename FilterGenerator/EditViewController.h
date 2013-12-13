@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) UIImage *editImage;
 @property (nonatomic, weak) IBOutlet UIImageView *editImageView;
+@property (nonatomic, weak) IBOutlet UIView *editView;
+@property (nonatomic, strong) NSDictionary *filterParameter;
 
 - (IBAction)touchFilterSelectButton:(id)sender;
 - (IBAction)touchImageSelectButton:(id)sender;

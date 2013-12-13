@@ -23,13 +23,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self.view addSubview:[[ContrastFilterView alloc] initWithFrame:self.view.frame]];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    if (self.editImage) [self.editImageView setImage:self.editImage];
+    if (self.editImage) {
+        [self.editImageView setImage:self.editImage];
+        ContrastFilterView *view = [[ContrastFilterView alloc] initWithFrame:self.editView.frame];
+        view.editImageView = self.editImageView;
+        view.originalImage = [self.editImageView image];
+        [self.view addSubview: view];
+    }
 }
 
 - (void)didReceiveMemoryWarning
