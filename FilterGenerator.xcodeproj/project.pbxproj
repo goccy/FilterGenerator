@@ -37,6 +37,9 @@
 		3E3A0CC6185EA38100CB5252 /* OverlayFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CC5185EA38100CB5252 /* OverlayFilterView.m */; };
 		3E3A0CCB185EA89B00CB5252 /* FilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CCA185EA89B00CB5252 /* FilterView.m */; };
 		3E3A0CCF185EE36100CB5252 /* BrightnessFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CCE185EE36100CB5252 /* BrightnessFilterView.m */; };
+		3E3A0CD3185F0B5C00CB5252 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CD2185F0B5C00CB5252 /* SliderView.m */; };
+		3E3A0CD8185F134600CB5252 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CD6185F134600CB5252 /* SaveViewController.m */; };
+		3E3A0CD9185F134600CB5252 /* SaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CD7185F134600CB5252 /* SaveViewController.xib */; };
 		965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,11 @@
 		3E3A0CCA185EA89B00CB5252 /* FilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterView.m; sourceTree = "<group>"; };
 		3E3A0CCD185EE36100CB5252 /* BrightnessFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessFilterView.h; sourceTree = "<group>"; };
 		3E3A0CCE185EE36100CB5252 /* BrightnessFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessFilterView.m; sourceTree = "<group>"; };
+		3E3A0CD1185F0B5C00CB5252 /* SliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		3E3A0CD2185F0B5C00CB5252 /* SliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
+		3E3A0CD5185F134600CB5252 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
+		3E3A0CD6185F134600CB5252 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
+		3E3A0CD7185F134600CB5252 /* SaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveViewController.xib; sourceTree = "<group>"; };
 		D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,6 +224,7 @@
 		3E3A0C8418557A8C00CB5252 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0CD0185F0B2B00CB5252 /* CommonView */,
 				3E3A0CCC185EE34800CB5252 /* brightnessFilterView */,
 				3E3A0CC3185EA32F00CB5252 /* OverlayFilterView */,
 				3E3A0CC2185EA30D00CB5252 /* ContrastFilterView */,
@@ -228,6 +237,7 @@
 		3E3A0C8A1855A35800CB5252 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0CD4185F132400CB5252 /* SaveViewController */,
 				3E3A0CB018583A9000CB5252 /* SelectPhotoViewController */,
 				3E3A0C9D1856C72800CB5252 /* FilterSelectViewController */,
 				3E3A0C8B1855A36600CB5252 /* EditViewController */,
@@ -325,6 +335,25 @@
 			name = brightnessFilterView;
 			sourceTree = "<group>";
 		};
+		3E3A0CD0185F0B2B00CB5252 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0CD1185F0B5C00CB5252 /* SliderView.h */,
+				3E3A0CD2185F0B5C00CB5252 /* SliderView.m */,
+			);
+			name = CommonView;
+			sourceTree = "<group>";
+		};
+		3E3A0CD4185F132400CB5252 /* SaveViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0CD5185F134600CB5252 /* SaveViewController.h */,
+				3E3A0CD6185F134600CB5252 /* SaveViewController.m */,
+				3E3A0CD7185F134600CB5252 /* SaveViewController.xib */,
+			);
+			name = SaveViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +437,7 @@
 				3E3A0CBB18583FEA00CB5252 /* SelectPhotoViewCell.xib in Resources */,
 				3E3A0C5618556ECE00CB5252 /* InfoPlist.strings in Resources */,
 				3E3A0C8918557BB700CB5252 /* InitialViewController.xib in Resources */,
+				3E3A0CD9185F134600CB5252 /* SaveViewController.xib in Resources */,
 				3E3A0CA21856C77500CB5252 /* FilterSelectViewController.xib in Resources */,
 				3E3A0CB518583AC100CB5252 /* SelectPhotoViewController.xib in Resources */,
 			);
@@ -471,8 +501,10 @@
 				3E3A0CB918583FBF00CB5252 /* SelectPhotoViewCell.m in Sources */,
 				3E3A0C5C18556ECE00CB5252 /* AppDelegate.m in Sources */,
 				3E3A0C5818556ECE00CB5252 /* main.m in Sources */,
+				3E3A0CD3185F0B5C00CB5252 /* SliderView.m in Sources */,
 				3E3A0CCB185EA89B00CB5252 /* FilterView.m in Sources */,
 				3E3A0CC6185EA38100CB5252 /* OverlayFilterView.m in Sources */,
+				3E3A0CD8185F134600CB5252 /* SaveViewController.m in Sources */,
 				3E3A0C8818557BB700CB5252 /* InitialViewController.m in Sources */,
 				3E3A0C941855A4CA00CB5252 /* ViewControllerManager.m in Sources */,
 			);

@@ -7,7 +7,7 @@
 //
 
 #import "BrightnessFilterView.h"
-#define SLIDER_HEIGHT 30
+#import "SliderView.h"
 #define FILTER_IDENTIFIER @"BRIGHTNESS"
 
 @implementation BrightnessFilterView
@@ -17,16 +17,9 @@
     CGRect frame = editVC.editView.frame;
     self = [super initWithEditViewController:editVC];
     if (self) {
-        float frameWidth   = frame.size.width;
-        float frameHeight  = frame.size.height;
-        float sliderWidth  = frameWidth - 10;
-        float sliderHeight = SLIDER_HEIGHT;
-        float sliderX = (frameWidth - sliderWidth) / 2;
-        float sliderY = (frameHeight - sliderHeight) / 2;
-        CGRect sliderRect = CGRectMake(sliderX, sliderY, sliderWidth, sliderHeight);
-        UISlider *slider = [[UISlider alloc] initWithFrame:sliderRect];
+        SliderView *slider = [[SliderView alloc] initWithFrame:frame];
         slider.minimumValue = 0.0f;
-        slider.maximumValue = 1.0f;
+        slider.maximumValue = 0.5f;
         NSNumber *brightness = editVC.filterParameter[FILTER_IDENTIFIER];
         if (brightness) slider.value = [brightness floatValue];
         [slider addTarget:self action:@selector(changedContrast:) forControlEvents:UIControlEventValueChanged];

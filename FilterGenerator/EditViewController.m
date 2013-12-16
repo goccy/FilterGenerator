@@ -7,6 +7,7 @@
 //
 
 #import "EditViewController.h"
+#import "FilterView.h"
 
 @implementation EditViewController
 
@@ -27,7 +28,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    if (self.editImage)  [self.editImageView setImage:self.editImage];
+    self.editImageView.contentMode = UIViewContentModeScaleAspectFit;
+    if (self.editImage) self.editImageView.image = self.editImage;
     if (self.filterView) {
         [self.view addSubview: self.filterView];
     }
@@ -51,6 +53,13 @@
     SelectPhotoViewController *photoVC = [[SelectPhotoViewController alloc] initWithNibName:@"SelectPhotoViewController" bundle:nil];
     ViewControllerManager *manager = [self manager];
     [manager pushViewController:photoVC animated:YES];
+}
+
+- (IBAction)touchSaveButton:(id)sender
+{
+    SaveViewController *saveVC = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
+    saveVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentModalViewController:saveVC animated:YES];
 }
 
 @end
