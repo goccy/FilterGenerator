@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GPUImage.h"
 
 typedef enum {
     GPUIMAGE_SATURATION,
@@ -130,11 +131,17 @@ typedef enum {
     GPUIMAGE_END_FILTER
 } GPUImageFilterType;
 
+@class EditViewController;
+typedef GPUImageFilter*(*FilterMethod)(id);
+typedef UIView *(*FilterViewGetter)(EditViewController *);
+
 typedef struct {
     GPUImageFilterType type;
     char *name;
     bool isImplemented;
+    void *filterView;
     void *filter;
 } FilterInformation;
 
+extern FilterMethod getFilterMethod(const char *filterName);
 extern FilterInformation filterDeclare[];

@@ -48,8 +48,15 @@
     NSInteger index = indexPath.row;
     if (!filterDeclare[index].isImplemented) return;
     ViewControllerManager *manager = [self manager];
-    [manager popToRootViewControllerAnimated:YES];
-    //filterDeclare[index].filter();
+    [manager popViewControllerAnimated:YES];
+    NSArray *controllers = [manager viewControllers];
+    EditViewController *editVC  = (EditViewController *)controllers[1];
+    FilterViewGetter viewGetter = (FilterViewGetter)filterDeclare[index].filterView;
+    UIView *previousFilterView = editVC.filterView;
+    editVC.filterView = viewGetter(editVC);
+    for (UIView *view in [editVC.view subviews]) {
+        if (view == previousFilterView) [view removeFromSuperview];
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

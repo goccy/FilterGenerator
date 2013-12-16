@@ -7,7 +7,6 @@
 //
 
 #import "EditViewController.h"
-#import "ContrastFilterView.h"
 
 @implementation EditViewController
 
@@ -15,7 +14,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.filterParameter = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -28,12 +27,9 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    if (self.editImage) {
-        [self.editImageView setImage:self.editImage];
-        ContrastFilterView *view = [[ContrastFilterView alloc] initWithFrame:self.editView.frame];
-        view.editImageView = self.editImageView;
-        view.originalImage = [self.editImageView image];
-        [self.view addSubview: view];
+    if (self.editImage)  [self.editImageView setImage:self.editImage];
+    if (self.filterView) {
+        [self.view addSubview: self.filterView];
     }
 }
 

@@ -17,9 +17,11 @@
 @interface EditViewController : BaseViewController
 
 @property (nonatomic, strong) UIImage *editImage;
+@property (nonatomic, strong) UIImage *originalImage;
 @property (nonatomic, weak) IBOutlet UIImageView *editImageView;
 @property (nonatomic, weak) IBOutlet UIView *editView;
-@property (nonatomic, strong) NSDictionary *filterParameter;
+@property (nonatomic, strong)   UIView *filterView;
+@property (nonatomic, strong) NSMutableDictionary *filterParameter;
 
 - (IBAction)touchFilterSelectButton:(id)sender;
 - (IBAction)touchImageSelectButton:(id)sender;

@@ -1,17 +1,16 @@
 //
-//  ContrastFilterView.m
+//  BrightnessFilterView.m
 //  FilterGenerator
 //
-//  Created by masaaki goshima on 2013/12/11.
+//  Created by masaaki goshima on 2013/12/16.
 //  Copyright (c) 2013年 masaaki goshima. All rights reserved.
 //
 
-#import "ContrastFilterView.h"
-
+#import "BrightnessFilterView.h"
 #define SLIDER_HEIGHT 30
-#define FILTER_IDENTIFIER @"CONTRAST"
+#define FILTER_IDENTIFIER @"BRIGHTNESS"
 
-@implementation ContrastFilterView
+@implementation BrightnessFilterView
 
 - (id)initWithEditViewController:(EditViewController *)editVC
 {
@@ -27,9 +26,9 @@
         CGRect sliderRect = CGRectMake(sliderX, sliderY, sliderWidth, sliderHeight);
         UISlider *slider = [[UISlider alloc] initWithFrame:sliderRect];
         slider.minimumValue = 0.0f;
-        slider.maximumValue = 10.0f;
-        NSNumber *contrast = editVC.filterParameter[FILTER_IDENTIFIER];
-        if (contrast) slider.value = [contrast floatValue];
+        slider.maximumValue = 1.0f;
+        NSNumber *brightness = editVC.filterParameter[FILTER_IDENTIFIER];
+        if (brightness) slider.value = [brightness floatValue];
         [slider addTarget:self action:@selector(changedContrast:) forControlEvents:UIControlEventValueChanged];
         [self addSubview:slider];
     }
@@ -38,8 +37,8 @@
 
 - (void)changedContrast:(UISlider *)slider
 {
-    float contrast = slider.value;
-    [self.editVC.filterParameter setObject:@(contrast) forKey:FILTER_IDENTIFIER];
+    float brightness = slider.value;
+    [self.editVC.filterParameter setObject:@(brightness) forKey:FILTER_IDENTIFIER];
     UIImage *filteredImage = [self makeFilteredImageByFilterParameter:self.editVC.filterParameter image:self.originalImage];
     [self.editImageView setImage:filteredImage];
 }

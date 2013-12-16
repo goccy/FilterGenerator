@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 #import "FilterTypeDelclare.h"
+#import "EditViewController.h"
 
 @interface FilterSelectViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
 

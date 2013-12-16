@@ -39,6 +39,7 @@
     NSArray *controllers = [manager viewControllers];
     EditViewController *editVC = (EditViewController *)controllers[1];
     editVC.editImage = editImage;
+    editVC.originalImage = editImage;
 }
 
 /*

@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "GPUImage.h"
+#import "FilterView.h"
 
-@interface ContrastFilterView : UIView
+@interface ContrastFilterView : FilterView
 
-@property(nonatomic, strong) GPUImageContrastFilter *contrastFilter;
-@property(nonatomic, strong) UIImage     *originalImage;    @property(nonatomic, strong) UIImageView *editImageView;
+- (ContrastFilterView *)initWithEditViewController:(EditViewController *)editVC;
 
 @end
