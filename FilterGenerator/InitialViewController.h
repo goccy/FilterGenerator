@@ -13,11 +13,11 @@
 #import "BaseViewController.h"
 #import "EditViewController.h"
 
-@interface InitialViewController : BaseViewController {
-    IBOutlet UIButton *newFilterButton;
-}
+@interface InitialViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
 
-- (IBAction)touchDownButton:(id)sender;
+@property(nonatomic, strong) NSMutableArray *tableParameters;
+@property(nonatomic, weak) IBOutlet UITableView *tableView;
+@property(nonatomic, weak) IBOutlet UIButton *createFilterButton;
 
 @end
 

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SaveViewController : UIViewController
+@interface SaveViewController : BaseViewController
+
+@property (nonatomic, weak) IBOutlet UITextField *filterNameArea;
+@property (nonatomic, weak) IBOutlet UITextField *codeNameArea;
 
 @end

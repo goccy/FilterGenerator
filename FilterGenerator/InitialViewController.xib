@@ -7,7 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController">
             <connections>
-                <outlet property="newFilterButton" destination="dc6-3Q-KCH" id="V8M-qo-iYl"/>
+                <outlet property="createFilterButton" destination="dc6-3Q-KCH" id="PYa-zw-0qz"/>
+                <outlet property="tableView" destination="K5r-Xf-OSe" id="uZH-36-8DX"/>
                 <outlet property="view" destination="1" id="c5s-IJ-o3u"/>
             </connections>
         </placeholder>
@@ -20,6 +21,10 @@
                     <rect key="frame" x="20" y="88" width="280" height="360"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XSf-B0-G3j"/>
+                        <outlet property="delegate" destination="-1" id="QUu-Fi-gQY"/>
+                    </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-3Q-KCH">
                     <rect key="frame" x="88" y="37" width="144" height="36"/>
@@ -29,7 +34,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="touchDownButton:" destination="-1" eventType="touchDown" id="dub-xJ-RKW"/>
+                        <action selector="touchDownButton:" destination="-1" eventType="touchDown" id="kcB-7z-GYJ"/>
                     </connections>
                 </button>
             </subviews>

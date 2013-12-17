@@ -59,7 +59,7 @@
 {
     SaveViewController *saveVC = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil];
     saveVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    [self presentModalViewController:saveVC animated:YES];
+    [self presentViewController:saveVC animated:YES completion: ^{}];
 }
 
 @end
