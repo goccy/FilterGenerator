@@ -80,7 +80,16 @@
         [saveParameter setObject:filterName forKey:@"name"];
         [saveParameter setObject:filterParameter forKey:@"body"];
         NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-        [userDefault setObject:saveParameter forKey:codeName];
+        NSDictionary *filterParameters = [userDefault dictionaryForKey:@"filterParameters"];
+        NSMutableDictionary *dict;
+        if (filterParameters) {
+            dict = [NSMutableDictionary dictionaryWithDictionary:filterParameters];
+            [dict setObject:saveParameter forKey:codeName];
+        } else {
+            dict = [[NSMutableDictionary alloc] init];
+            [dict setObject:saveParameter forKey:codeName];
+        }
+        [userDefault setObject:dict forKey:@"filterParameters"];
         [self dismissViewControllerAnimated:YES completion:nil];
         [manager popToRootViewControllerAnimated:YES];
     } else {

@@ -26,12 +26,12 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    NSDictionary *savedParameters = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
+    NSDictionary *savedParameters = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"filterParameters"];
     for (NSString *codeName in [savedParameters allKeys]) {
-        if (![codeName isEqualToString:@"sampl"]) continue;
         NSDictionary *params = [savedParameters objectForKey:codeName];
-        [self.tableParameters addObject:params];
+        if (![self.tableParameters containsObject:params]) [self.tableParameters addObject:params];
     }
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,9 +60,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger index = indexPath.row;
     NSDictionary *param = self.tableParameters[index];
-    NSMutableDictionary *filterParameter = [param objectForKey:@"body"];
+    NSDictionary *filterParameter = [param objectForKey:@"body"];
     EditViewController *editVC = [[EditViewController alloc] initWithNibName:@"EditViewController" bundle:nil];
-    editVC.filterParameter = filterParameter;
+    editVC.filterParameter = [NSMutableDictionary dictionaryWithDictionary:filterParameter];
     ViewControllerManager *manager = [self manager];
     [manager pushViewController:editVC animated:YES];
 }
