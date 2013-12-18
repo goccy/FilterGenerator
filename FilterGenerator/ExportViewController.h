@@ -10,4 +10,6 @@
 
 @interface ExportViewController : UIViewController
 
++ (void)export;
+
 @end

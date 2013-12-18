@@ -9,15 +9,18 @@
 #import "FilterTypeDelclare.h"
 #import "ContrastFilterView.h"
 #import "BrightnessFilterView.h"
+#import "SaturationFilterView.h"
 
 GPUImageFilter *contrastFilter(NSNumber *contrast);
 UIView *contrastView(EditViewController *);
 GPUImageFilter *brightnessFilter(NSNumber *brightness);
 UIView *brightnessView(EditViewController *);
+GPUImageFilter *saturationFilter(NSNumber *saturation);
+UIView *saturationView(EditViewController *);
 
 FilterInformation filterDeclare[] = {
-    {GPUIMAGE_SATURATION,                 "SATURATION",                  false, NULL, NULL},
-    {GPUIMAGE_CONTRAST,                   "CONTRAST",                    true, contrastView, contrastFilter},
+    {GPUIMAGE_SATURATION,                 "SATURATION",                  true, saturationView, saturationFilter},
+    {GPUIMAGE_CONTRAST,                   "CONTRAST",                    true, contrastView,   contrastFilter},
     {GPUIMAGE_BRIGHTNESS,                 "BRIGHTNESS",                  true, brightnessView, brightnessFilter},
     {GPUIMAGE_LEVELS,                     "LEVELS",                      false, NULL, NULL},
     {GPUIMAGE_EXPOSURE,                   "EXPOSURE",                    false, NULL, NULL},
@@ -148,6 +151,19 @@ FilterMethod getFilterMethod(const char *filterName)
         }
     }
     return nil;
+}
+
+GPUImageFilter *saturationFilter(NSNumber *saturationValue)
+{
+    float saturation = [saturationValue floatValue];
+    GPUImageSaturationFilter *saturationFilter = [[GPUImageSaturationFilter alloc] init];
+    [saturationFilter setSaturation:saturation];
+    return saturationFilter;
+}
+
+UIView *saturationView(EditViewController *editVC)
+{
+    return [[SaturationFilterView alloc] initWithEditViewController:editVC];
 }
 
 GPUImageFilter *contrastFilter(NSNumber *contrastValue)

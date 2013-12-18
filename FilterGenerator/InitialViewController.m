@@ -7,6 +7,7 @@
 //
 
 #import "InitialViewController.h"
+#import "ExportViewController.h"
 
 @implementation InitialViewController
 
@@ -60,7 +61,7 @@
 
 - (IBAction)touchExportButton:(id)sender
 {
-    
+    [ExportViewController export];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

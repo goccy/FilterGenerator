@@ -51,6 +51,7 @@
 		3E3A0CED1861AC3D00CB5252 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CEC1861AC3C00CB5252 /* filter.png */; };
 		3E4388381861B70000188870 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4388361861B70000188870 /* ExportViewController.m */; };
 		3E4388391861B70000188870 /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E4388371861B70000188870 /* ExportViewController.xib */; };
+		3E43883D1861B81400188870 /* SaturationFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E43883C1861B81400188870 /* SaturationFilterView.m */; };
 		965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +130,8 @@
 		3E4388351861B70000188870 /* ExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportViewController.h; sourceTree = "<group>"; };
 		3E4388361861B70000188870 /* ExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportViewController.m; sourceTree = "<group>"; };
 		3E4388371861B70000188870 /* ExportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExportViewController.xib; sourceTree = "<group>"; };
+		3E43883B1861B81400188870 /* SaturationFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaturationFilterView.h; sourceTree = "<group>"; };
+		3E43883C1861B81400188870 /* SaturationFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaturationFilterView.m; sourceTree = "<group>"; };
 		D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -247,6 +250,7 @@
 		3E3A0C8418557A8C00CB5252 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E43883A1861B7D900188870 /* SaturationFilterView */,
 				3E3A0CD0185F0B2B00CB5252 /* CommonView */,
 				3E3A0CCC185EE34800CB5252 /* brightnessFilterView */,
 				3E3A0CC3185EA32F00CB5252 /* OverlayFilterView */,
@@ -413,6 +417,15 @@
 			name = ExportViewController;
 			sourceTree = "<group>";
 		};
+		3E43883A1861B7D900188870 /* SaturationFilterView */ = {
+			isa = PBXGroup;
+			children = (
+				3E43883B1861B81400188870 /* SaturationFilterView.h */,
+				3E43883C1861B81400188870 /* SaturationFilterView.m */,
+			);
+			name = SaturationFilterView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,6 +589,7 @@
 				3E3A0CC6185EA38100CB5252 /* OverlayFilterView.m in Sources */,
 				3E3A0CD8185F134600CB5252 /* SaveViewController.m in Sources */,
 				3E3A0C8818557BB700CB5252 /* InitialViewController.m in Sources */,
+				3E43883D1861B81400188870 /* SaturationFilterView.m in Sources */,
 				3E3A0C941855A4CA00CB5252 /* ViewControllerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

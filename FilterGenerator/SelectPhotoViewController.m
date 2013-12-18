@@ -45,6 +45,7 @@
 {
     [super viewDidLoad];
     [self.collectionView registerNib:[UINib nibWithNibName:@"SelectPhotoViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+    self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"binding_dark.png"]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,6 +7,7 @@
 //
 
 #import "ExportViewController.h"
+#define SERVER_HOST "http://localhost:9000"
 
 @interface ExportViewController ()
 
@@ -21,6 +22,20 @@
         // Custom initialization
     }
     return self;
+}
+
++ (void)export
+{
+    NSDictionary *filterParameters = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"filterParameters"];
+    if([NSJSONSerialization isValidJSONObject:filterParameters]){
+        NSError *error = nil;
+        NSData *data = [NSJSONSerialization dataWithJSONObject:filterParameters options:NSJSONWritingPrettyPrinted error:&error];
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+        [request setHTTPMethod:@"POST"];
+        [request setHTTPBody:data];
+        [request setURL:[NSURL URLWithString:@(SERVER_HOST)]];
+        (void)[[NSURLConnection alloc] initWithRequest:request delegate:self];
+    }
 }
 
 - (void)viewDidLoad
