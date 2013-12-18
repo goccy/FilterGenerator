@@ -16,6 +16,15 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.filterParameter = [[NSMutableDictionary alloc] init];
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"binding_dark.png"]];
+        self.editImageView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"debut_light.png"]];
+        self.editImageView.layer.cornerRadius = 5;
+        self.editImageView.clipsToBounds = true;
+        self.title = @"Edit Filter";
+        UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleDone
+                                                                     target:self
+                                                                     action:@selector(touchSaveButton:)];
+        self.navigationItem.rightBarButtonItem = rightItem;
     }
     return self;
 }
@@ -29,7 +38,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     self.editImageView.contentMode = UIViewContentModeScaleAspectFit;
-    if (self.editImage) self.editImageView.image = self.editImage;
+    if (self.editImage) {
+        for (UIView *view in [self.view subviews]) {
+            if (view == self.setImageButton) [view removeFromSuperview];
+        }
+        self.editImageView.image = self.editImage;
+    }
     if (self.filterView) {
         [self.view addSubview: self.filterView];
     }

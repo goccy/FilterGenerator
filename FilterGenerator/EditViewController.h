@@ -22,6 +22,7 @@
 @property (nonatomic, strong) UIImage *originalImage;
 @property (nonatomic, weak) IBOutlet UIImageView *editImageView;
 @property (nonatomic, weak) IBOutlet UIView *editView;
+@property (nonatomic, weak) IBOutlet UIView *setImageButton;
 @property (nonatomic, strong)   FilterView *filterView;
 @property (nonatomic, strong) NSMutableDictionary *filterParameter;
 

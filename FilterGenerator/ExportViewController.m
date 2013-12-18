@@ -1,25 +1,24 @@
 //
-//  ViewControllerManager.m
+//  ExportViewController.m
 //  FilterGenerator
 //
-//  Created by masaaki goshima on 2013/12/09.
+//  Created by masaaki goshima on 2013/12/18.
 //  Copyright (c) 2013年 masaaki goshima. All rights reserved.
 //
 
-#import "ViewControllerManager.h"
+#import "ExportViewController.h"
 
-@interface ViewControllerManager ()
+@interface ExportViewController ()
 
 @end
 
-@implementation ViewControllerManager
+@implementation ExportViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.navigationBar.tintColor = [UIColor blackColor];
-        self.navigationBar.alpha = 0.6;
+        // Custom initialization
     }
     return self;
 }

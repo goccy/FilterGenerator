@@ -15,6 +15,17 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.tableParameters = [[NSMutableArray alloc] init];
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"binding_dark.png"]];
+        self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"debut_light.png"]];
+        self.tableView.layer.cornerRadius = 5;
+        self.tableView.clipsToBounds = true;
+        self.createFilterButton.layer.cornerRadius = 0;
+        self.createFilterButton.clipsToBounds = true;
+        self.title = @"Manage Filter";
+        UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Export" style:UIBarButtonItemStyleDone
+                                                                     target:self
+                                                                     action:@selector(touchExportButton:)];
+        self.navigationItem.rightBarButtonItem = rightItem;
     }
     return self;
 }
@@ -45,6 +56,11 @@
     EditViewController *editVC = [[EditViewController alloc] initWithNibName:@"EditViewController" bundle:nil];
     ViewControllerManager *manager = [self manager];
     [manager pushViewController:editVC animated:YES];
+}
+
+- (IBAction)touchExportButton:(id)sender
+{
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

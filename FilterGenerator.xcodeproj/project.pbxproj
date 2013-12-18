@@ -40,6 +40,17 @@
 		3E3A0CD3185F0B5C00CB5252 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CD2185F0B5C00CB5252 /* SliderView.m */; };
 		3E3A0CD8185F134600CB5252 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CD6185F134600CB5252 /* SaveViewController.m */; };
 		3E3A0CD9185F134600CB5252 /* SaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CD7185F134600CB5252 /* SaveViewController.xib */; };
+		3E3A0CDE1861808300CB5252 /* binding_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CDB1861808300CB5252 /* binding_dark.png */; };
+		3E3A0CDF1861808300CB5252 /* binding_dark_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CDC1861808300CB5252 /* binding_dark_@2X.png */; };
+		3E3A0CE01861808300CB5252 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CDD1861808300CB5252 /* readme.txt */; };
+		3E3A0CE51861832500CB5252 /* debut_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CE21861832400CB5252 /* debut_light.png */; };
+		3E3A0CE61861832500CB5252 /* debut_light_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CE31861832500CB5252 /* debut_light_@2X.png */; };
+		3E3A0CE71861832500CB5252 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CE41861832500CB5252 /* readme.txt */; };
+		3E3A0CE91861AB5500CB5252 /* change_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CE81861AB5500CB5252 /* change_image.png */; };
+		3E3A0CEB1861AB8600CB5252 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CEA1861AB8600CB5252 /* plus.png */; };
+		3E3A0CED1861AC3D00CB5252 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CEC1861AC3C00CB5252 /* filter.png */; };
+		3E4388381861B70000188870 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4388361861B70000188870 /* ExportViewController.m */; };
+		3E4388391861B70000188870 /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E4388371861B70000188870 /* ExportViewController.xib */; };
 		965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +117,18 @@
 		3E3A0CD5185F134600CB5252 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
 		3E3A0CD6185F134600CB5252 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
 		3E3A0CD7185F134600CB5252 /* SaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveViewController.xib; sourceTree = "<group>"; };
+		3E3A0CDB1861808300CB5252 /* binding_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = binding_dark.png; sourceTree = "<group>"; };
+		3E3A0CDC1861808300CB5252 /* binding_dark_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "binding_dark_@2X.png"; sourceTree = "<group>"; };
+		3E3A0CDD1861808300CB5252 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		3E3A0CE21861832400CB5252 /* debut_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debut_light.png; sourceTree = "<group>"; };
+		3E3A0CE31861832500CB5252 /* debut_light_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "debut_light_@2X.png"; sourceTree = "<group>"; };
+		3E3A0CE41861832500CB5252 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		3E3A0CE81861AB5500CB5252 /* change_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = change_image.png; sourceTree = "<group>"; };
+		3E3A0CEA1861AB8600CB5252 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		3E3A0CEC1861AC3C00CB5252 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		3E4388351861B70000188870 /* ExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportViewController.h; sourceTree = "<group>"; };
+		3E4388361861B70000188870 /* ExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportViewController.m; sourceTree = "<group>"; };
+		3E4388371861B70000188870 /* ExportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExportViewController.xib; sourceTree = "<group>"; };
 		D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -237,6 +260,7 @@
 		3E3A0C8A1855A35800CB5252 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3E4388341861B6EA00188870 /* ExportViewController */,
 				3E3A0CD4185F132400CB5252 /* SaveViewController */,
 				3E3A0CB018583A9000CB5252 /* SelectPhotoViewController */,
 				3E3A0C9D1856C72800CB5252 /* FilterSelectViewController */,
@@ -304,6 +328,11 @@
 		3E3A0CBD185843D100CB5252 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0CEC1861AC3C00CB5252 /* filter.png */,
+				3E3A0CEA1861AB8600CB5252 /* plus.png */,
+				3E3A0CE81861AB5500CB5252 /* change_image.png */,
+				3E3A0CE11861832400CB5252 /* debut_light */,
+				3E3A0CDA1861808300CB5252 /* binding_dark */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -352,6 +381,36 @@
 				3E3A0CD7185F134600CB5252 /* SaveViewController.xib */,
 			);
 			name = SaveViewController;
+			sourceTree = "<group>";
+		};
+		3E3A0CDA1861808300CB5252 /* binding_dark */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0CDB1861808300CB5252 /* binding_dark.png */,
+				3E3A0CDC1861808300CB5252 /* binding_dark_@2X.png */,
+				3E3A0CDD1861808300CB5252 /* readme.txt */,
+			);
+			path = binding_dark;
+			sourceTree = "<group>";
+		};
+		3E3A0CE11861832400CB5252 /* debut_light */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A0CE21861832400CB5252 /* debut_light.png */,
+				3E3A0CE31861832500CB5252 /* debut_light_@2X.png */,
+				3E3A0CE41861832500CB5252 /* readme.txt */,
+			);
+			path = debut_light;
+			sourceTree = "<group>";
+		};
+		3E4388341861B6EA00188870 /* ExportViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E4388351861B70000188870 /* ExportViewController.h */,
+				3E4388361861B70000188870 /* ExportViewController.m */,
+				3E4388371861B70000188870 /* ExportViewController.xib */,
+			);
+			name = ExportViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,13 +492,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A0C951855A4CA00CB5252 /* ViewControllerManager.xib in Resources */,
+				3E3A0CDE1861808300CB5252 /* binding_dark.png in Resources */,
 				3E3A0C901855A39B00CB5252 /* EditViewController.xib in Resources */,
 				3E3A0CBB18583FEA00CB5252 /* SelectPhotoViewCell.xib in Resources */,
+				3E3A0CE71861832500CB5252 /* readme.txt in Resources */,
+				3E3A0CE01861808300CB5252 /* readme.txt in Resources */,
+				3E3A0CDF1861808300CB5252 /* binding_dark_@2X.png in Resources */,
 				3E3A0C5618556ECE00CB5252 /* InfoPlist.strings in Resources */,
 				3E3A0C8918557BB700CB5252 /* InitialViewController.xib in Resources */,
 				3E3A0CD9185F134600CB5252 /* SaveViewController.xib in Resources */,
+				3E3A0CE51861832500CB5252 /* debut_light.png in Resources */,
 				3E3A0CA21856C77500CB5252 /* FilterSelectViewController.xib in Resources */,
+				3E4388391861B70000188870 /* ExportViewController.xib in Resources */,
+				3E3A0CE91861AB5500CB5252 /* change_image.png in Resources */,
+				3E3A0CED1861AC3D00CB5252 /* filter.png in Resources */,
 				3E3A0CB518583AC100CB5252 /* SelectPhotoViewController.xib in Resources */,
+				3E3A0CE61861832500CB5252 /* debut_light_@2X.png in Resources */,
+				3E3A0CEB1861AB8600CB5252 /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +568,7 @@
 				3E3A0CA618571BB100CB5252 /* FilterTypeDelclare.m in Sources */,
 				3E3A0CB418583AC100CB5252 /* SelectPhotoViewController.m in Sources */,
 				3E3A0CB918583FBF00CB5252 /* SelectPhotoViewCell.m in Sources */,
+				3E4388381861B70000188870 /* ExportViewController.m in Sources */,
 				3E3A0C5C18556ECE00CB5252 /* AppDelegate.m in Sources */,
 				3E3A0C5818556ECE00CB5252 /* main.m in Sources */,
 				3E3A0CD3185F0B5C00CB5252 /* SliderView.m in Sources */,
