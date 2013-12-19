@@ -7,7 +7,7 @@
 //
 
 #import "ExportViewController.h"
-#define SERVER_HOST "http://localhost:9000"
+#define SERVER_HOST "http://localhost:9000/save_filter_parameter"
 
 @interface ExportViewController ()
 

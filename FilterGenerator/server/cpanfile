@@ -1,0 +1,22 @@
+on 'build' => sub {
+    requires 'Class::Accessor::Fast';
+    requires 'JSON::XS';
+    requires 'YAML::XS';
+    requires 'Plack::Runner';
+    requires 'Mojolicious';
+    requires 'Starman';
+    requires 'DBIx::Skinny';
+    requires 'Data::Section::Simple';
+    requires 'DateTime';
+    requires 'DBD::mysql';
+    requires 'Cinnamon';
+    requires 'Net::OpenSSH';
+    requires 'Server::Starter';
+    requires 'Net::Server::SS::PreFork';
+    requires 'Text::Xslate';
+    requires 'Data::Validator';
+};
+
+on 'test' => sub {
+    requires 'Test::More', '0.98';
+};
