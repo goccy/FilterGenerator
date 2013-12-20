@@ -1,14 +1,14 @@
 //
-//  OverlayFilterView.m
+//  OverlayFilterViewCell.m
 //  FilterGenerator
 //
-//  Created by 五嶋 壮晃 on 2013/12/16.
+//  Created by masaaki goshima on 2013/12/19.
 //  Copyright (c) 2013年 masaaki goshima. All rights reserved.
 //
 
-#import "OverlayFilterView.h"
+#import "OverlayFilterViewCell.h"
 
-@implementation OverlayFilterView
+@implementation OverlayFilterViewCell
 
 - (id)initWithFrame:(CGRect)frame
 {

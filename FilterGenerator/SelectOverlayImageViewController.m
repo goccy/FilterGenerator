@@ -1,17 +1,20 @@
 //
-//  SelectPhotoViewController.m
+//  SelectOverlayImageViewController.m
 //  FilterGenerator
 //
-//  Created by masaaki goshima on 2013/12/11.
+//  Created by masaaki goshima on 2013/12/20.
 //  Copyright (c) 2013年 masaaki goshima. All rights reserved.
 //
 
-#import "SelectPhotoViewController.h"
-#import "SelectPhotoViewCell.h"
+#import "SelectOverlayImageViewController.h"
+#import "SelectOverlayImageCell.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@implementation SelectPhotoViewController
+@interface SelectOverlayImageViewController ()
 
+@end
+
+@implementation SelectOverlayImageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -19,7 +22,7 @@
     if (self) {
         self.photos = [NSMutableArray array];
         self.groups = [NSMutableArray array];
-        __weak SelectPhotoViewController *weakSelf = self;
+        __weak SelectOverlayImageViewController *weakSelf = self;
         self.library = [[ALAssetsLibrary alloc] init];
         //NSUInteger groupTypes = ALAssetsGroupAlbum | ALAssetsGroupEvent | ALAssetsGroupFaces;
         ALAssetsLibraryGroupsEnumerationResultsBlock groupBlock = ^(ALAssetsGroup *group, BOOL *stop) {
@@ -44,14 +47,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.collectionView registerNib:[UINib nibWithNibName:@"SelectPhotoViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"SelectOverlayImageCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
     self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"binding_dark.png"]];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -61,15 +58,20 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    SelectPhotoViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    if (!cell) cell = [[SelectPhotoViewCell alloc] init];
+    SelectOverlayImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    if (!cell) cell = [[SelectOverlayImageCell alloc] init];
     NSDictionary *dictionary = self.photos[indexPath.row];
     ALAsset *asset = [dictionary objectForKey:@"asset"];
     UIImage *thumbnail = [dictionary objectForKey:@"thumbnail"];
-    cell.selectPhotoVC = self;
+    cell.overlayImageVC = self;
     [cell setAsset:asset];
     [cell setImage:thumbnail];
     return cell;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
 @end

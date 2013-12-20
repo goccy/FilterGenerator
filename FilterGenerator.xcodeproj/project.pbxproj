@@ -34,7 +34,6 @@
 		3E3A0CB918583FBF00CB5252 /* SelectPhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CB818583FBF00CB5252 /* SelectPhotoViewCell.m */; };
 		3E3A0CBB18583FEA00CB5252 /* SelectPhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A0CBA18583FEA00CB5252 /* SelectPhotoViewCell.xib */; };
 		3E3A0CC11858624600CB5252 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3A0CC01858624600CB5252 /* AssetsLibrary.framework */; };
-		3E3A0CC6185EA38100CB5252 /* OverlayFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CC5185EA38100CB5252 /* OverlayFilterView.m */; };
 		3E3A0CCB185EA89B00CB5252 /* FilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CCA185EA89B00CB5252 /* FilterView.m */; };
 		3E3A0CCF185EE36100CB5252 /* BrightnessFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CCE185EE36100CB5252 /* BrightnessFilterView.m */; };
 		3E3A0CD3185F0B5C00CB5252 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0CD2185F0B5C00CB5252 /* SliderView.m */; };
@@ -52,6 +51,15 @@
 		3E4388381861B70000188870 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4388361861B70000188870 /* ExportViewController.m */; };
 		3E4388391861B70000188870 /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E4388371861B70000188870 /* ExportViewController.xib */; };
 		3E43883D1861B81400188870 /* SaturationFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E43883C1861B81400188870 /* SaturationFilterView.m */; };
+		3E4388421862E69200188870 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4388411862E69200188870 /* trash.png */; };
+		3E4388441862E6F000188870 /* OverlayFilterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E4388431862E6F000188870 /* OverlayFilterViewCell.xib */; };
+		3E43884A1862EB3D00188870 /* OverlayFilterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4388491862EB3D00188870 /* OverlayFilterViewCell.m */; };
+		3EBF01D318643E0500C18A78 /* SelectOverlayImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF01D218643E0500C18A78 /* SelectOverlayImageViewController.m */; };
+		3EBF01D618643EBF00C18A78 /* SelectOverlayImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF01D518643EBF00C18A78 /* SelectOverlayImageCell.m */; };
+		3EBF01D818643F7000C18A78 /* SelectOverlayImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EBF01D718643F7000C18A78 /* SelectOverlayImageCell.xib */; };
+		3EBF01DC18644CE400C18A78 /* OverlayFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF01DA18644CE400C18A78 /* OverlayFilterViewController.m */; };
+		3EBF01DD18644CE400C18A78 /* OverlayFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EBF01DB18644CE400C18A78 /* OverlayFilterViewController.xib */; };
+		3EBF01DF186456B700C18A78 /* SelectOverlayImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EBF01DE186456B700C18A78 /* SelectOverlayImageViewController.xib */; };
 		965216EFF28940EF99B9B2F8 /* libPods-FilterGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */; };
 /* End PBXBuildFile section */
 
@@ -107,8 +115,6 @@
 		3E3A0CB818583FBF00CB5252 /* SelectPhotoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewCell.m; sourceTree = "<group>"; };
 		3E3A0CBA18583FEA00CB5252 /* SelectPhotoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPhotoViewCell.xib; sourceTree = "<group>"; };
 		3E3A0CC01858624600CB5252 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
-		3E3A0CC4185EA38100CB5252 /* OverlayFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayFilterView.h; sourceTree = "<group>"; };
-		3E3A0CC5185EA38100CB5252 /* OverlayFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayFilterView.m; sourceTree = "<group>"; };
 		3E3A0CC9185EA89B00CB5252 /* FilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterView.h; sourceTree = "<group>"; };
 		3E3A0CCA185EA89B00CB5252 /* FilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterView.m; sourceTree = "<group>"; };
 		3E3A0CCD185EE36100CB5252 /* BrightnessFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessFilterView.h; sourceTree = "<group>"; };
@@ -132,6 +138,19 @@
 		3E4388371861B70000188870 /* ExportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExportViewController.xib; sourceTree = "<group>"; };
 		3E43883B1861B81400188870 /* SaturationFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaturationFilterView.h; sourceTree = "<group>"; };
 		3E43883C1861B81400188870 /* SaturationFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaturationFilterView.m; sourceTree = "<group>"; };
+		3E4388411862E69200188870 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		3E4388431862E6F000188870 /* OverlayFilterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayFilterViewCell.xib; sourceTree = "<group>"; };
+		3E4388481862EB3D00188870 /* OverlayFilterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayFilterViewCell.h; sourceTree = "<group>"; };
+		3E4388491862EB3D00188870 /* OverlayFilterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayFilterViewCell.m; sourceTree = "<group>"; };
+		3EBF01D118643E0500C18A78 /* SelectOverlayImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectOverlayImageViewController.h; sourceTree = "<group>"; };
+		3EBF01D218643E0500C18A78 /* SelectOverlayImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectOverlayImageViewController.m; sourceTree = "<group>"; };
+		3EBF01D418643EBF00C18A78 /* SelectOverlayImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectOverlayImageCell.h; sourceTree = "<group>"; };
+		3EBF01D518643EBF00C18A78 /* SelectOverlayImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectOverlayImageCell.m; sourceTree = "<group>"; };
+		3EBF01D718643F7000C18A78 /* SelectOverlayImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectOverlayImageCell.xib; sourceTree = "<group>"; };
+		3EBF01D918644CE400C18A78 /* OverlayFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayFilterViewController.h; sourceTree = "<group>"; };
+		3EBF01DA18644CE400C18A78 /* OverlayFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayFilterViewController.m; sourceTree = "<group>"; };
+		3EBF01DB18644CE400C18A78 /* OverlayFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayFilterViewController.xib; sourceTree = "<group>"; };
+		3EBF01DE186456B700C18A78 /* SelectOverlayImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectOverlayImageViewController.xib; sourceTree = "<group>"; };
 		D61F61AAA9894758AD7EBE42 /* libPods-FilterGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -332,6 +351,7 @@
 		3E3A0CBD185843D100CB5252 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3E4388411862E69200188870 /* trash.png */,
 				3E3A0CEC1861AC3C00CB5252 /* filter.png */,
 				3E3A0CEA1861AB8600CB5252 /* plus.png */,
 				3E3A0CE81861AB5500CB5252 /* change_image.png */,
@@ -353,8 +373,18 @@
 		3E3A0CC3185EA32F00CB5252 /* OverlayFilterView */ = {
 			isa = PBXGroup;
 			children = (
-				3E3A0CC4185EA38100CB5252 /* OverlayFilterView.h */,
-				3E3A0CC5185EA38100CB5252 /* OverlayFilterView.m */,
+				3EBF01D118643E0500C18A78 /* SelectOverlayImageViewController.h */,
+				3EBF01D218643E0500C18A78 /* SelectOverlayImageViewController.m */,
+				3EBF01DE186456B700C18A78 /* SelectOverlayImageViewController.xib */,
+				3EBF01D418643EBF00C18A78 /* SelectOverlayImageCell.h */,
+				3EBF01D518643EBF00C18A78 /* SelectOverlayImageCell.m */,
+				3EBF01D718643F7000C18A78 /* SelectOverlayImageCell.xib */,
+				3E4388481862EB3D00188870 /* OverlayFilterViewCell.h */,
+				3E4388491862EB3D00188870 /* OverlayFilterViewCell.m */,
+				3E4388431862E6F000188870 /* OverlayFilterViewCell.xib */,
+				3EBF01D918644CE400C18A78 /* OverlayFilterViewController.h */,
+				3EBF01DA18644CE400C18A78 /* OverlayFilterViewController.m */,
+				3EBF01DB18644CE400C18A78 /* OverlayFilterViewController.xib */,
 			);
 			name = OverlayFilterView;
 			sourceTree = "<group>";
@@ -507,21 +537,26 @@
 				3E3A0C951855A4CA00CB5252 /* ViewControllerManager.xib in Resources */,
 				3E3A0CDE1861808300CB5252 /* binding_dark.png in Resources */,
 				3E3A0C901855A39B00CB5252 /* EditViewController.xib in Resources */,
+				3EBF01DD18644CE400C18A78 /* OverlayFilterViewController.xib in Resources */,
 				3E3A0CBB18583FEA00CB5252 /* SelectPhotoViewCell.xib in Resources */,
 				3E3A0CE71861832500CB5252 /* readme.txt in Resources */,
 				3E3A0CE01861808300CB5252 /* readme.txt in Resources */,
+				3E4388421862E69200188870 /* trash.png in Resources */,
 				3E3A0CDF1861808300CB5252 /* binding_dark_@2X.png in Resources */,
 				3E3A0C5618556ECE00CB5252 /* InfoPlist.strings in Resources */,
 				3E3A0C8918557BB700CB5252 /* InitialViewController.xib in Resources */,
 				3E3A0CD9185F134600CB5252 /* SaveViewController.xib in Resources */,
 				3E3A0CE51861832500CB5252 /* debut_light.png in Resources */,
 				3E3A0CA21856C77500CB5252 /* FilterSelectViewController.xib in Resources */,
+				3E4388441862E6F000188870 /* OverlayFilterViewCell.xib in Resources */,
+				3EBF01DF186456B700C18A78 /* SelectOverlayImageViewController.xib in Resources */,
 				3E4388391861B70000188870 /* ExportViewController.xib in Resources */,
 				3E3A0CE91861AB5500CB5252 /* change_image.png in Resources */,
 				3E3A0CED1861AC3D00CB5252 /* filter.png in Resources */,
 				3E3A0CB518583AC100CB5252 /* SelectPhotoViewController.xib in Resources */,
 				3E3A0CE61861832500CB5252 /* debut_light_@2X.png in Resources */,
 				3E3A0CEB1861AB8600CB5252 /* plus.png in Resources */,
+				3EBF01D818643F7000C18A78 /* SelectOverlayImageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBF01DC18644CE400C18A78 /* OverlayFilterViewController.m in Sources */,
 				3E3A0C8F1855A39B00CB5252 /* EditViewController.m in Sources */,
 				3E3A0C9C1855A77D00CB5252 /* BaseViewController.m in Sources */,
 				3E3A0CAF1858114200CB5252 /* ContrastFilterView.m in Sources */,
@@ -582,13 +618,15 @@
 				3E3A0CB418583AC100CB5252 /* SelectPhotoViewController.m in Sources */,
 				3E3A0CB918583FBF00CB5252 /* SelectPhotoViewCell.m in Sources */,
 				3E4388381861B70000188870 /* ExportViewController.m in Sources */,
+				3EBF01D318643E0500C18A78 /* SelectOverlayImageViewController.m in Sources */,
 				3E3A0C5C18556ECE00CB5252 /* AppDelegate.m in Sources */,
 				3E3A0C5818556ECE00CB5252 /* main.m in Sources */,
 				3E3A0CD3185F0B5C00CB5252 /* SliderView.m in Sources */,
 				3E3A0CCB185EA89B00CB5252 /* FilterView.m in Sources */,
-				3E3A0CC6185EA38100CB5252 /* OverlayFilterView.m in Sources */,
+				3E43884A1862EB3D00188870 /* OverlayFilterViewCell.m in Sources */,
 				3E3A0CD8185F134600CB5252 /* SaveViewController.m in Sources */,
 				3E3A0C8818557BB700CB5252 /* InitialViewController.m in Sources */,
+				3EBF01D618643EBF00C18A78 /* SelectOverlayImageCell.m in Sources */,
 				3E43883D1861B81400188870 /* SaturationFilterView.m in Sources */,
 				3E3A0C941855A4CA00CB5252 /* ViewControllerManager.m in Sources */,
 			);

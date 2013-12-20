@@ -9,6 +9,8 @@
 #import "EditViewController.h"
 #import "FilterView.h"
 
+#import "OverlayFilterViewController.h"
+
 @implementation EditViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -47,6 +49,11 @@
     if (self.filterView) {
         [self.view addSubview: self.filterView];
     }
+    NSLog(@"set OverlayFilterView");
+    OverlayFilterViewController *vc = [[OverlayFilterViewController alloc] initWithNibName:@"OverlayFilterViewController" bundle:nil];
+    [self addChildViewController:vc];
+    [vc didMoveToParentViewController:self];
+    [self.view addSubview: vc.view];
 }
 
 - (void)didReceiveMemoryWarning

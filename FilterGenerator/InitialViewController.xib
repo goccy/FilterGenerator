@@ -26,11 +26,12 @@
                         <outlet property="delegate" destination="-1" id="QUu-Fi-gQY"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-3Q-KCH">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-3Q-KCH">
                     <rect key="frame" x="88" y="37" width="144" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.99444444444444446" green="0.98888888888888893" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="tintColor" red="0.0221643501814584" green="0.28472580643913237" blue="0.75484035326086962" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Create New Filter">
                         <color key="titleColor" red="0.020175869829999998" green="0.02006315547" blue="0.020288584179999999" alpha="1" colorSpace="calibratedRGB"/>
