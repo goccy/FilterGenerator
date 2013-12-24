@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "OverlayFilterViewController.h"
 
 @class ALAssetsLibrary;
 
@@ -17,5 +18,6 @@
 @property(nonatomic, strong) ALAssetsLibrary *library;
 @property(nonatomic, strong) NSMutableArray *photos;
 @property(nonatomic, strong) NSMutableArray *groups;
+@property(nonatomic, strong) OverlayFilterViewController *overlayFilterVC;
 
 @end

@@ -35,6 +35,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"set OverlayFilterView");
+    OverlayFilterViewController *vc = [[OverlayFilterViewController alloc] initWithNibName:@"OverlayFilterViewController" bundle:nil];
+    vc.editVC = self;
+    [self addChildViewController:vc];
+    [vc didMoveToParentViewController:self];
+    vc.view.frame = CGRectMake(0, 330, vc.view.frame.size.width, vc.view.frame.size.height);
+    [self.view addSubview: vc.view];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -49,11 +56,6 @@
     if (self.filterView) {
         [self.view addSubview: self.filterView];
     }
-    NSLog(@"set OverlayFilterView");
-    OverlayFilterViewController *vc = [[OverlayFilterViewController alloc] initWithNibName:@"OverlayFilterViewController" bundle:nil];
-    [self addChildViewController:vc];
-    [vc didMoveToParentViewController:self];
-    [self.view addSubview: vc.view];
 }
 
 - (void)didReceiveMemoryWarning

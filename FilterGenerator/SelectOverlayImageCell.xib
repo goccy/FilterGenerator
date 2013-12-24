@@ -26,7 +26,6 @@
                         </state>
                         <connections>
                             <action selector="selected:" destination="S7e-Gh-PYc" eventType="touchDown" id="eCN-f8-44O"/>
-                            <action selector="selected:" destination="-1" eventType="touchDown" id="tT4-aK-yJw"/>
                         </connections>
                     </button>
                 </subviews>

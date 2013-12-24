@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "EditViewController.h"
 
-@interface OverlayFilterViewController : BaseViewController
+@interface OverlayFilterViewController : BaseViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property(nonatomic, strong) IBOutlet UIButton *addOverlayImageButton;
+@property(nonatomic, strong) IBOutlet UICollectionView *collectionView;
+@property(nonatomic, strong) NSMutableArray *selectedImages;
+@property(nonatomic, strong) EditViewController *editVC;
 
 @end

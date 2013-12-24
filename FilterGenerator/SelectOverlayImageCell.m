@@ -10,6 +10,7 @@
 #import "SelectOverlayImageViewController.h"
 #import "SelectOverlayImageCell.h"
 #import "EditViewController.h"
+#import "OverlayFilterViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @implementation SelectOverlayImageCell
@@ -32,13 +33,11 @@
 - (IBAction)selected:(id)sender
 {
     ViewControllerManager *manager = [self.overlayImageVC manager];
-    [manager popViewControllerAnimated:YES];
     NSArray *controllers = [manager viewControllers];
-    //OverlayFilterViewControllerのcollectionViewに[self image]の結果をsetする
-    //OverlayBlendFilterを使ってEditImageViewの画像をフィルタリングする
-//    EditViewController *editVC = (EditViewController *)controllers[1];
-//    editVC.editImage = editImage;
-//    editVC.originalImage = editImage;
+    SelectOverlayImageViewController *selectOverlayImageVC = controllers[2];
+    UIImage *selectedImage  = [self image];
+    [selectOverlayImageVC.overlayFilterVC.selectedImages addObject:selectedImage];
+    [manager popViewControllerAnimated:YES];
 }
 
 @end

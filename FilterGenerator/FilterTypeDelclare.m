@@ -10,6 +10,7 @@
 #import "ContrastFilterView.h"
 #import "BrightnessFilterView.h"
 #import "SaturationFilterView.h"
+#import "OverlayFilterViewController.h"
 
 GPUImageFilter *contrastFilter(NSNumber *contrast);
 UIView *contrastView(EditViewController *);
@@ -17,6 +18,8 @@ GPUImageFilter *brightnessFilter(NSNumber *brightness);
 UIView *brightnessView(EditViewController *);
 GPUImageFilter *saturationFilter(NSNumber *saturation);
 UIView *saturationView(EditViewController *);
+GPUImageFilter *overlayFilter(NSMutableArray *images);
+UIView *overlayView(EditViewController *);
 
 FilterInformation filterDeclare[] = {
     {GPUIMAGE_SATURATION,                 "SATURATION",                  true, saturationView, saturationFilter},
@@ -112,7 +115,7 @@ FilterInformation filterDeclare[] = {
     {GPUIMAGE_ADD,                        "ADD",                         false, NULL, NULL},
     {GPUIMAGE_DIVIDE,                     "DIVIDE",                      false, NULL, NULL},
     {GPUIMAGE_MULTIPLY,                   "MULTIPLY",                    false, NULL, NULL},
-    {GPUIMAGE_OVERLAY,                    "OVERLAY",                     false, NULL, NULL},
+    {GPUIMAGE_OVERLAY,                    "OVERLAY",                     true,  overlayView, overlayFilter},
     {GPUIMAGE_LIGHTEN,                    "LIGHTEN",                     false, NULL, NULL},
     {GPUIMAGE_DARKEN,                     "DARKEN",                      false, NULL, NULL},
     {GPUIMAGE_COLORBURN,                  "COLOR BURN",                  false, NULL, NULL},
@@ -190,4 +193,21 @@ GPUImageFilter *brightnessFilter(NSNumber *brightnessValue)
 UIView *brightnessView(EditViewController *editVC)
 {
     return [[BrightnessFilterView alloc] initWithEditViewController:editVC];
+}
+
+GPUImageFilter *overlayFilter(NSMutableArray *images)
+{
+    GPUImageOverlayBlendFilter *filter = [[GPUImageOverlayBlendFilter alloc] init];
+    for (UIImage *image in images) {
+        GPUImagePicture *target = [[GPUImagePicture alloc] initWithImage:image smoothlyScaleOutput:YES];
+        [target addTarget:filter];
+        [target processImage];
+    }
+    return filter;
+}
+
+UIView *overlayView(EditViewController *editVC)
+{
+    OverlayFilterViewController *overlayVC = [[OverlayFilterViewController alloc] initWithNibName:@"OverlayFilterViewController" bundle:nil];
+    return overlayVC.view;
 }

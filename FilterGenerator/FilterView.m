@@ -34,6 +34,10 @@
     GPUImageFilter *beforeFilter = NULL;
     GPUImageFilter *firstFilter  = NULL;
     GPUImageFilter *lastFilter   = NULL;
+    if ([filterParameter objectForKey:@"OVERLAY"]) {
+        image = [self makeOverlayFilterByFilterParameter:filterParameter image:image];
+        [filterParameter removeObjectForKey:@"OVERLAY"];
+    }
     if (![filterParameter count]) return image;
     for (NSString *filterName in [filterParameter allKeys]) {
         FilterMethod filterMethod = getFilterMethod([filterName UTF8String]);
@@ -55,6 +59,23 @@
     [picture processImage];
     [group prepareForImageCapture];
     UIImage *ret = [group imageFromCurrentlyProcessedOutput];
+    return ret;
+}
+
+- (UIImage *)makeOverlayFilterByFilterParameter:(NSMutableDictionary *)filterParameters image:(UIImage *)image
+{
+    NSMutableArray *images = [filterParameters objectForKey:@"OVERLAY"];
+    UIImage *ret = image;
+    for (UIImage *overlayImage in images) {
+        GPUImageOverlayBlendFilter *overlayFilter = [[GPUImageOverlayBlendFilter alloc] init];
+        GPUImagePicture *src = [[GPUImagePicture alloc] initWithImage:ret];
+        GPUImagePicture *dst = [[GPUImagePicture alloc] initWithImage:overlayImage];
+        [src addTarget:overlayFilter];
+        [dst addTarget:overlayFilter];
+        [src processImage];
+        [dst processImage];
+        ret = [overlayFilter imageFromCurrentlyProcessedOutput];
+    }
     return ret;
 }
 
