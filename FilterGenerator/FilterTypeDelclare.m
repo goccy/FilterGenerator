@@ -209,5 +209,10 @@ GPUImageFilter *overlayFilter(NSMutableArray *images)
 UIView *overlayView(EditViewController *editVC)
 {
     OverlayFilterViewController *overlayVC = [[OverlayFilterViewController alloc] initWithNibName:@"OverlayFilterViewController" bundle:nil];
+    overlayVC.editVC = editVC;
+    [editVC addChildViewController:overlayVC];
+    [overlayVC didMoveToParentViewController:editVC];
+    CGSize frameSize = overlayVC.view.frame.size;
+    overlayVC.view.frame = CGRectMake(0, 330, frameSize.width, frameSize.height);
     return overlayVC.view;
 }
